@@ -569,10 +569,23 @@ void
 use_target_spawner(edict_t *self, edict_t *other /* unused */, edict_t *activator /* unused */)
 {
 	edict_t *ent;
+	trace_t tr;
 
 	if (!self)
 	{
 		return;
+	}
+
+	if( self->spawnflags & 1 )
+	{
+		vec3_t	mins = { -32, -32, -32 };
+		vec3_t	maxs = {  32,  32,  32 };
+		tr = gi.trace( self->s.origin, mins, maxs, self->s.origin, NULL, CONTENTS_MONSTER );
+		if( tr.ent && tr.ent->solid == SOLID_BBOX )
+		{
+//			gi.dprintf( "blocked by %s\n", tr.ent->classname );
+			return;
+		}
 	}
 
 	ent = G_Spawn();
