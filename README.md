@@ -1,3 +1,3 @@
-Quake 2 New Era (based on Yamagi 7.40)
+Quake 2 'Comrades' mod (based on Yamagi 7.43)
 
 Under construction ...
