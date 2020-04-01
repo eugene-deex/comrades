@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{f5a2d2eb-ff11-4755-91b0-007b711a4d61}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{584f14a7-7dd0-4e92-865a-cb5673283288}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;fi;fd</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="gl3\gl3_draw.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gl3\gl3_image.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gl3\gl3_light.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gl3\gl3_lightmap.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gl3\gl3_main.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gl3\gl3_md2.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gl3\gl3_mesh.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gl3\gl3_misc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gl3\gl3_model.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gl3\gl3_sdl.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gl3\gl3_shaders.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gl3\gl3_sp2.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gl3\gl3_surf.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gl3\gl3_warp.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gl3\glad\src\glad.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\backends\windows\shared\hunk.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\md4.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="files\pcx.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="files\pvs.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\shared\shared.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="files\stb.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="files\wal.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="gl3\header\DG_dynarr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="gl3\glad\include\glad\glad.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="gl3\header\HandmadeMath.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="gl3\glad\include\KHR\khrplatform.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="gl3\header\local.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="gl3\header\model.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="files\stb_image.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="files\stb_image_resize.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

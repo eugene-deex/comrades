@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <SccProjectName>"$/GoldSrc/game", ELEBAAAA</SccProjectName>
+    <SccLocalPath>.</SccLocalPath>
+    <ProjectGuid>{316D0FF9-0658-4EBF-9072-117D4071C2D8}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\..\temp\game\!release\</OutDir>
+    <IntDir>.\..\temp\game\!release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+    <IgnoreImportLibrary>true</IgnoreImportLibrary>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>.\..\temp\game\!debug\</OutDir>
+    <IntDir>.\..\temp\game\!debug\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+    <IgnoreImportLibrary>true</IgnoreImportLibrary>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>MaxSpeed</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <AdditionalIncludeDirectories>./;ents;game;global;monsters;../common;../pm_shared;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\..\temp\game\!release\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>.\..\temp\game\!release\game.pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>.\..\temp\game\!release\</ObjectFileName>
+      <ProgramDataBaseFileName>.\..\temp\game\!release\</ProgramDataBaseFileName>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\..\temp\game\!release\game.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\..\temp\game\!release\game.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <LinkDLL>true</LinkDLL>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <IgnoreSpecificDefaultLibraries>libc.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <ModuleDefinitionFile>.\game.def</ModuleDefinitionFile>
+      <OutputFile>.\..\temp\game\!release\game.dll</OutputFile>
+      <ImportLibrary>.\..\temp\game\!release\game.lib</ImportLibrary>
+      <AdditionalDependencies>msvcrt.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <CustomBuildStep>
+      <Command>copy $(TargetDir)game.dll "C:\Quake2\baseq2\game.dll"</Command>
+      <Message>Performing Custom Build Step on %(FullPath)</Message>
+      <Outputs>C:\Quake2\baseq2\game.dll;%(Outputs)</Outputs>
+    </CustomBuildStep>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <MinimalRebuild>true</MinimalRebuild>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <AdditionalIncludeDirectories>./;ents;game;global;monsters;../common;../pm_shared;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <UndefineAllPreprocessorDefinitions>false</UndefineAllPreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\..\temp\game\!debug\</AssemblerListingLocation>
+      <BrowseInformation>true</BrowseInformation>
+      <PrecompiledHeaderOutputFile>.\..\temp\game\!debug\game.pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>.\..\temp\game\!debug\</ObjectFileName>
+      <ProgramDataBaseFileName>.\..\temp\game\!debug\</ProgramDataBaseFileName>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\..\temp\game\!debug\game.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\..\temp\game\!debug\game.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <LinkDLL>true</LinkDLL>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <IgnoreSpecificDefaultLibraries>libc.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ModuleDefinitionFile>.\game.def</ModuleDefinitionFile>
+      <OutputFile>.\..\temp\game\!debug\game.dll</OutputFile>
+      <ImportLibrary>.\..\temp\game\!debug\game.lib</ImportLibrary>
+      <AdditionalDependencies>msvcrtd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <CustomBuildStep>
+      <Command>copy $(TargetDir)game.dll "C:\Quake2\baseq2\game.dll"</Command>
+      <Message>Performing Custom Build Step on %(FullPath)</Message>
+      <Outputs>C:\Quake2\baseq2\game.dll;%(Outputs)</Outputs>
+    </CustomBuildStep>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\common\shared\flash.c" />
+    <ClCompile Include="..\common\shared\rand.c" />
+    <ClCompile Include="..\common\shared\shared.c" />
+    <ClCompile Include="g_ai.c" />
+    <ClCompile Include="g_chase.c" />
+    <ClCompile Include="g_cmds.c" />
+    <ClCompile Include="g_combat.c" />
+    <ClCompile Include="g_func.c" />
+    <ClCompile Include="g_items.c" />
+    <ClCompile Include="g_main.c" />
+    <ClCompile Include="g_misc.c" />
+    <ClCompile Include="g_monster.c" />
+    <ClCompile Include="g_parent.c" />
+    <ClCompile Include="g_phys.c" />
+    <ClCompile Include="g_spawn.c" />
+    <ClCompile Include="g_svcmds.c" />
+    <ClCompile Include="g_target.c" />
+    <ClCompile Include="g_trigger.c" />
+    <ClCompile Include="g_turret.c" />
+    <ClCompile Include="g_utils.c" />
+    <ClCompile Include="g_weapon.c" />
+    <ClCompile Include="monster\berserker.c" />
+    <ClCompile Include="monster\boss2.c" />
+    <ClCompile Include="monster\boss3.c" />
+    <ClCompile Include="monster\boss31.c" />
+    <ClCompile Include="monster\boss32.c" />
+    <ClCompile Include="monster\brain.c" />
+    <ClCompile Include="monster\chick.c" />
+    <ClCompile Include="monster\flipper.c" />
+    <ClCompile Include="monster\float.c" />
+    <ClCompile Include="monster\flyer.c" />
+    <ClCompile Include="monster\gladiator.c" />
+    <ClCompile Include="monster\gunner.c" />
+    <ClCompile Include="monster\hover.c" />
+    <ClCompile Include="monster\infantry.c" />
+    <ClCompile Include="monster\insane.c" />
+    <ClCompile Include="monster\medic.c" />
+    <ClCompile Include="monster\move.c" />
+    <ClCompile Include="monster\mutant.c" />
+    <ClCompile Include="monster\parasite.c" />
+    <ClCompile Include="monster\soldier.c" />
+    <ClCompile Include="monster\supertank.c" />
+    <ClCompile Include="monster\tank.c" />
+    <ClCompile Include="player\client.c" />
+    <ClCompile Include="player\hud.c" />
+    <ClCompile Include="player\trail.c" />
+    <ClCompile Include="player\view.c" />
+    <ClCompile Include="player\weapon.c" />
+    <ClCompile Include="savegame\savegame.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="game.h" />
+    <ClInclude Include="header\local.h" />
+    <ClInclude Include="monster\berserker.h" />
+    <ClInclude Include="monster\boss2.h" />
+    <ClInclude Include="monster\boss31.h" />
+    <ClInclude Include="monster\boss32.h" />
+    <ClInclude Include="monster\brain.h" />
+    <ClInclude Include="monster\chick.h" />
+    <ClInclude Include="monster\flipper.h" />
+    <ClInclude Include="monster\float.h" />
+    <ClInclude Include="monster\flyer.h" />
+    <ClInclude Include="monster\gladiator.h" />
+    <ClInclude Include="monster\gunner.h" />
+    <ClInclude Include="monster\hover.h" />
+    <ClInclude Include="monster\infantry.h" />
+    <ClInclude Include="monster\insane.h" />
+    <ClInclude Include="monster\medic.h" />
+    <ClInclude Include="monster\mutant.h" />
+    <ClInclude Include="monster\parasite.h" />
+    <ClInclude Include="monster\player.h" />
+    <ClInclude Include="monster\soldier.h" />
+    <ClInclude Include="monster\supertank.h" />
+    <ClInclude Include="monster\tank.h" />
+    <ClInclude Include="savegame\clientfields.h" />
+    <ClInclude Include="savegame\fields.h" />
+    <ClInclude Include="savegame\gamefunc_decs.h" />
+    <ClInclude Include="savegame\gamefunc_list.h" />
+    <ClInclude Include="savegame\gamemmove_decs.h" />
+    <ClInclude Include="savegame\gamemmove_list.h" />
+    <ClInclude Include="savegame\levelfields.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

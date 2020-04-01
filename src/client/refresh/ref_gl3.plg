@@ -1,0 +1,107 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: ref_gl3 - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\BITTER~1\LOCALS~1\Temp\RSP173.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /Gi /GX /ZI /Od /I "./" /I "./gl3/glad/include" /D "YQ2OSTYPE Windows" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /FR"..\..\temp\ref_gl3\!debug/" /Fo"..\..\temp\ref_gl3\!debug/" /Fd"..\..\temp\ref_gl3\!debug/" /FD /c 
+"C:\q2src\client\refresh\gl3\gl3_draw.c"
+"C:\q2src\client\refresh\gl3\gl3_image.c"
+"C:\q2src\client\refresh\gl3\gl3_light.c"
+"C:\q2src\client\refresh\gl3\gl3_lightmap.c"
+"C:\q2src\client\refresh\gl3\gl3_main.c"
+"C:\q2src\client\refresh\gl3\gl3_md2.c"
+"C:\q2src\client\refresh\gl3\gl3_mesh.c"
+"C:\q2src\client\refresh\gl3\gl3_misc.c"
+"C:\q2src\client\refresh\gl3\gl3_model.c"
+"C:\q2src\client\refresh\gl3\gl3_sdl.c"
+"C:\q2src\client\refresh\gl3\gl3_shaders.c"
+"C:\q2src\client\refresh\gl3\gl3_sp2.c"
+"C:\q2src\client\refresh\gl3\gl3_surf.c"
+"C:\q2src\client\refresh\gl3\gl3_warp.c"
+"C:\q2src\client\refresh\gl3\glad\src\glad.c"
+"C:\q2src\backends\windows\shared\hunk.c"
+"C:\q2src\common\md4.c"
+"C:\q2src\client\refresh\files\pcx.c"
+"C:\q2src\client\refresh\files\pvs.c"
+"C:\q2src\common\shared\shared.c"
+"C:\q2src\client\refresh\files\stb.c"
+"C:\q2src\client\refresh\files\wal.c"
+]
+Creating command line "cl.exe @C:\DOCUME~1\BITTER~1\LOCALS~1\Temp\RSP173.tmp" 
+Creating temporary file "C:\DOCUME~1\BITTER~1\LOCALS~1\Temp\RSP174.tmp" with contents
+[
+msvcrtd.lib user32.lib gdi32.lib ./SDL2.lib /nologo /subsystem:windows /dll /incremental:yes /pdb:"..\..\temp\ref_gl3\!debug/ref_gl3.pdb" /debug /machine:I386 /nodefaultlib:"msvcrt.lib" /out:"..\..\temp\ref_gl3\!debug/ref_gl3.dll" /implib:"..\..\temp\ref_gl3\!debug/ref_gl3.lib" /pdbtype:sept 
+"\q2src\temp\ref_gl3\!debug\gl3_draw.obj"
+"\q2src\temp\ref_gl3\!debug\gl3_image.obj"
+"\q2src\temp\ref_gl3\!debug\gl3_light.obj"
+"\q2src\temp\ref_gl3\!debug\gl3_lightmap.obj"
+"\q2src\temp\ref_gl3\!debug\gl3_main.obj"
+"\q2src\temp\ref_gl3\!debug\gl3_md2.obj"
+"\q2src\temp\ref_gl3\!debug\gl3_mesh.obj"
+"\q2src\temp\ref_gl3\!debug\gl3_misc.obj"
+"\q2src\temp\ref_gl3\!debug\gl3_model.obj"
+"\q2src\temp\ref_gl3\!debug\gl3_sdl.obj"
+"\q2src\temp\ref_gl3\!debug\gl3_shaders.obj"
+"\q2src\temp\ref_gl3\!debug\gl3_sp2.obj"
+"\q2src\temp\ref_gl3\!debug\gl3_surf.obj"
+"\q2src\temp\ref_gl3\!debug\gl3_warp.obj"
+"\q2src\temp\ref_gl3\!debug\glad.obj"
+"\q2src\temp\ref_gl3\!debug\hunk.obj"
+"\q2src\temp\ref_gl3\!debug\md4.obj"
+"\q2src\temp\ref_gl3\!debug\pcx.obj"
+"\q2src\temp\ref_gl3\!debug\pvs.obj"
+"\q2src\temp\ref_gl3\!debug\shared.obj"
+"\q2src\temp\ref_gl3\!debug\stb.obj"
+"\q2src\temp\ref_gl3\!debug\wal.obj"
+]
+Creating command line "link.exe @C:\DOCUME~1\BITTER~1\LOCALS~1\Temp\RSP174.tmp"
+Creating temporary file "C:\DOCUME~1\BITTER~1\LOCALS~1\Temp\RSP175.bat" with contents
+[
+@echo off
+copy \q2src\temp\ref_gl3\!debug\ref_gl3.dll "C:\Quake2\ref_gl3.dll"
+]
+Creating command line "C:\DOCUME~1\BITTER~1\LOCALS~1\Temp\RSP175.bat"
+Compiling...
+gl3_draw.c
+gl3_image.c
+gl3_light.c
+gl3_lightmap.c
+gl3_main.c
+gl3_md2.c
+gl3_mesh.c
+gl3_misc.c
+gl3_model.c
+gl3_sdl.c
+gl3_shaders.c
+gl3_sp2.c
+gl3_surf.c
+gl3_warp.c
+glad.c
+hunk.c
+md4.c
+pcx.c
+pvs.c
+shared.c
+Generating Code...
+Compiling...
+stb.c
+wal.c
+Generating Code...
+Linking...
+   Creating library ..\..\temp\ref_gl3\!debug/ref_gl3.lib and object ..\..\temp\ref_gl3\!debug/ref_gl3.exp
+<h3>Output Window</h3>
+Performing Custom Build Step on \q2src\temp\ref_gl3\!debug\ref_gl3.dll
+Скопировано файлов:         1.
+
+
+
+<h3>Results</h3>
+ref_gl3.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

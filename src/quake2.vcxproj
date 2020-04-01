@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Template|Win32">
+      <Configuration>Template</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <SccProjectName />
+    <SccLocalPath />
+    <ProjectGuid>{6AB4E6EE-10EA-4F49-A3B9-235B509D1581}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Template|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>.\temp\quake2\!debug\</OutDir>
+    <IntDir>.\temp\quake2\!debug\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\temp\quake2\!release\</OutDir>
+    <IntDir>.\temp\quake2\!release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <AdditionalIncludeDirectories>./client\refresh;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerOutput>AssemblyAndSourceCode</AssemblerOutput>
+      <AssemblerListingLocation>.\temp\quake2\!debug\</AssemblerListingLocation>
+      <BrowseInformation>true</BrowseInformation>
+      <PrecompiledHeaderOutputFile>.\temp\quake2\!debug\quake2.pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>.\temp\quake2\!debug\</ObjectFileName>
+      <ProgramDataBaseFileName>.\temp\quake2\!debug\</ProgramDataBaseFileName>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\temp\quake2\!debug\quake2.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0419</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\temp\quake2\!debug\quake2.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OutputFile>.\temp\quake2\!debug/yquake2.exe</OutputFile>
+      <AdditionalDependencies>odbc32.lib;odbccp32.lib;wsock32.lib;winmm.lib;.\client\refresh\SDL2.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <CustomBuildStep>
+      <Command>copy $(TargetDir)yquake2.exe "C:\Quake2\yquake2.exe"</Command>
+      <Outputs>C:\Quake2\yquake2.exe;%(Outputs)</Outputs>
+    </CustomBuildStep>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>MaxSpeed</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <AdditionalIncludeDirectories>./client\refresh;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\temp\quake2\!release\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>.\temp\quake2\!release\quake2.pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>.\temp\quake2\!release\</ObjectFileName>
+      <ProgramDataBaseFileName>.\temp\quake2\!release\</ProgramDataBaseFileName>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\temp\quake2\!release\quake2.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0419</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\temp\quake2\!release\quake2.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <SubSystem>Console</SubSystem>
+      <OutputFile>.\temp\quake2\!release/yquake2.exe</OutputFile>
+      <AdditionalDependencies>odbc32.lib;odbccp32.lib;wsock32.lib;winmm.lib;.\client\refresh\SDL2.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <CustomBuildStep>
+      <Command>copy $(TargetDir)yquake2.exe "C:\Quake2\yquake2.exe"</Command>
+      <Outputs>C:\Quake2\yquake2.exe;%(Outputs)</Outputs>
+    </CustomBuildStep>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="backends\generic\misc.c" />
+    <ClCompile Include="backends\windows\network.c" />
+    <ClCompile Include="backends\windows\shared\hunk.c" />
+    <ClCompile Include="backends\windows\system.c" />
+    <ClCompile Include="backends\windows\sys_win.c" />
+    <ClCompile Include="client\cl_cin.c" />
+    <ClCompile Include="client\cl_console.c" />
+    <ClCompile Include="client\cl_download.c" />
+    <ClCompile Include="client\cl_effects.c" />
+    <ClCompile Include="client\cl_entities.c" />
+    <ClCompile Include="client\cl_input.c" />
+    <ClCompile Include="client\cl_inventory.c" />
+    <ClCompile Include="client\cl_keyboard.c" />
+    <ClCompile Include="client\cl_lights.c" />
+    <ClCompile Include="client\cl_main.c" />
+    <ClCompile Include="client\cl_network.c" />
+    <ClCompile Include="client\cl_parse.c" />
+    <ClCompile Include="client\cl_particles.c" />
+    <ClCompile Include="client\cl_prediction.c" />
+    <ClCompile Include="client\cl_screen.c" />
+    <ClCompile Include="client\cl_tempentities.c" />
+    <ClCompile Include="client\cl_view.c" />
+    <ClCompile Include="client\input\in_sdl.c" />
+    <ClCompile Include="client\menu\menu.c" />
+    <ClCompile Include="client\menu\qmenu.c" />
+    <ClCompile Include="client\menu\videomenu.c" />
+    <ClCompile Include="client\sound\ogg.c" />
+    <ClCompile Include="client\sound\openal.c" />
+    <ClCompile Include="client\sound\qal.c" />
+    <ClCompile Include="client\sound\snd_sdl.c" />
+    <ClCompile Include="client\sound\sound.c" />
+    <ClCompile Include="client\sound\wave.c" />
+    <ClCompile Include="client\vid\glimp_sdl.c" />
+    <ClCompile Include="client\vid\vid.c" />
+    <ClCompile Include="common\argproc.c" />
+    <ClCompile Include="common\clientserver.c" />
+    <ClCompile Include="common\cmdparser.c" />
+    <ClCompile Include="common\collision.c" />
+    <ClCompile Include="common\crc.c" />
+    <ClCompile Include="common\cvar.c" />
+    <ClCompile Include="common\filesystem.c" />
+    <ClCompile Include="common\frame.c" />
+    <ClCompile Include="common\glob.c" />
+    <ClCompile Include="common\md4.c" />
+    <ClCompile Include="common\movemsg.c" />
+    <ClCompile Include="common\netchan.c" />
+    <ClCompile Include="common\pmove.c" />
+    <ClCompile Include="common\shared\flash.c" />
+    <ClCompile Include="common\shared\rand.c" />
+    <ClCompile Include="common\shared\shared.c" />
+    <ClCompile Include="common\szone.c" />
+    <ClCompile Include="common\unzip\ioapi.c" />
+    <ClCompile Include="common\unzip\miniz.c" />
+    <ClCompile Include="common\unzip\unzip.c" />
+    <ClCompile Include="common\zone.c" />
+    <ClCompile Include="server\sv_cmd.c" />
+    <ClCompile Include="server\sv_conless.c" />
+    <ClCompile Include="server\sv_entities.c" />
+    <ClCompile Include="server\sv_game.c" />
+    <ClCompile Include="server\sv_init.c" />
+    <ClCompile Include="server\sv_main.c" />
+    <ClCompile Include="server\sv_save.c" />
+    <ClCompile Include="server\sv_send.c" />
+    <ClCompile Include="server\sv_user.c" />
+    <ClCompile Include="server\sv_world.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="backends\windows\q2.rc">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">backends\windows;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">backends\windows;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="backends\windows\header\resource.h" />
+    <ClInclude Include="client\header\client.h" />
+    <ClInclude Include="client\header\console.h" />
+    <ClInclude Include="client\header\keyboard.h" />
+    <ClInclude Include="client\header\screen.h" />
+    <ClInclude Include="client\input\header\input.h" />
+    <ClInclude Include="client\menu\header\qmenu.h" />
+    <ClInclude Include="client\sound\header\local.h" />
+    <ClInclude Include="client\sound\header\qal.h" />
+    <ClInclude Include="client\sound\header\sound.h" />
+    <ClInclude Include="client\sound\header\stb_vorbis.h" />
+    <ClInclude Include="client\sound\header\vorbis.h" />
+    <ClInclude Include="client\vid\header\ref.h" />
+    <ClInclude Include="client\vid\header\stb_image_write.h" />
+    <ClInclude Include="client\vid\header\vid.h" />
+    <ClInclude Include="client\vid\icon\q2icon64.h" />
+    <ClInclude Include="common\unzip\ioapi.h" />
+    <ClInclude Include="common\unzip\miniz.h" />
+    <ClInclude Include="common\unzip\minizconf.h" />
+    <ClInclude Include="common\unzip\unzip.h" />
+    <ClInclude Include="server\header\server.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="backends\windows\q2.ico" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

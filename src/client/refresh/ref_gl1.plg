@@ -1,0 +1,107 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: ref_gl1 - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\BITTER~1\LOCALS~1\Temp\RSP16D.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /Gi /GX /ZI /Od /I "./" /D "YQ2OSTYPE Windows" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /FAs /Fa"..\..\temp\ref_gl1\!debug/" /FR"..\..\temp\ref_gl1\!debug/" /Fo"..\..\temp\ref_gl1\!debug/" /Fd"..\..\temp\ref_gl1\!debug/" /FD /c 
+"C:\q2src\client\refresh\gl1\gl1_draw.c"
+"C:\q2src\client\refresh\gl1\gl1_image.c"
+"C:\q2src\client\refresh\gl1\gl1_light.c"
+"C:\q2src\client\refresh\gl1\gl1_lightmap.c"
+"C:\q2src\client\refresh\gl1\gl1_main.c"
+"C:\q2src\client\refresh\gl1\gl1_md2.c"
+"C:\q2src\client\refresh\gl1\gl1_mesh.c"
+"C:\q2src\client\refresh\gl1\gl1_misc.c"
+"C:\q2src\client\refresh\gl1\gl1_model.c"
+"C:\q2src\client\refresh\gl1\gl1_scrap.c"
+"C:\q2src\client\refresh\gl1\gl1_sdl.c"
+"C:\q2src\client\refresh\gl1\gl1_sp2.c"
+"C:\q2src\client\refresh\gl1\gl1_surf.c"
+"C:\q2src\client\refresh\gl1\gl1_warp.c"
+"C:\q2src\backends\windows\shared\hunk.c"
+"C:\q2src\common\md4.c"
+"C:\q2src\client\refresh\files\pcx.c"
+"C:\q2src\client\refresh\files\pvs.c"
+"C:\q2src\client\refresh\gl1\qgl.c"
+"C:\q2src\common\shared\shared.c"
+"C:\q2src\client\refresh\files\stb.c"
+"C:\q2src\client\refresh\files\wal.c"
+]
+Creating command line "cl.exe @C:\DOCUME~1\BITTER~1\LOCALS~1\Temp\RSP16D.tmp" 
+Creating temporary file "C:\DOCUME~1\BITTER~1\LOCALS~1\Temp\RSP16E.tmp" with contents
+[
+user32.lib gdi32.lib ./SDL2.lib opengl32.lib /nologo /subsystem:windows /dll /incremental:yes /pdb:"..\..\temp\ref_gl1\!debug/ref_gl1.pdb" /debug /machine:I386 /out:"..\..\temp\ref_gl1\!debug/ref_gl1.dll" /implib:"..\..\temp\ref_gl1\!debug/ref_gl1.lib" /pdbtype:sept 
+"\q2src\temp\ref_gl1\!debug\gl1_draw.obj"
+"\q2src\temp\ref_gl1\!debug\gl1_image.obj"
+"\q2src\temp\ref_gl1\!debug\gl1_light.obj"
+"\q2src\temp\ref_gl1\!debug\gl1_lightmap.obj"
+"\q2src\temp\ref_gl1\!debug\gl1_main.obj"
+"\q2src\temp\ref_gl1\!debug\gl1_md2.obj"
+"\q2src\temp\ref_gl1\!debug\gl1_mesh.obj"
+"\q2src\temp\ref_gl1\!debug\gl1_misc.obj"
+"\q2src\temp\ref_gl1\!debug\gl1_model.obj"
+"\q2src\temp\ref_gl1\!debug\gl1_scrap.obj"
+"\q2src\temp\ref_gl1\!debug\gl1_sdl.obj"
+"\q2src\temp\ref_gl1\!debug\gl1_sp2.obj"
+"\q2src\temp\ref_gl1\!debug\gl1_surf.obj"
+"\q2src\temp\ref_gl1\!debug\gl1_warp.obj"
+"\q2src\temp\ref_gl1\!debug\hunk.obj"
+"\q2src\temp\ref_gl1\!debug\md4.obj"
+"\q2src\temp\ref_gl1\!debug\pcx.obj"
+"\q2src\temp\ref_gl1\!debug\pvs.obj"
+"\q2src\temp\ref_gl1\!debug\qgl.obj"
+"\q2src\temp\ref_gl1\!debug\shared.obj"
+"\q2src\temp\ref_gl1\!debug\stb.obj"
+"\q2src\temp\ref_gl1\!debug\wal.obj"
+]
+Creating command line "link.exe @C:\DOCUME~1\BITTER~1\LOCALS~1\Temp\RSP16E.tmp"
+Creating temporary file "C:\DOCUME~1\BITTER~1\LOCALS~1\Temp\RSP16F.bat" with contents
+[
+@echo off
+copy \q2src\temp\ref_gl1\!debug\ref_gl1.dll "C:\Quake2\ref_gl1.dll"
+]
+Creating command line "C:\DOCUME~1\BITTER~1\LOCALS~1\Temp\RSP16F.bat"
+Compiling...
+gl1_draw.c
+gl1_image.c
+gl1_light.c
+gl1_lightmap.c
+gl1_main.c
+gl1_md2.c
+gl1_mesh.c
+gl1_misc.c
+gl1_model.c
+gl1_scrap.c
+gl1_sdl.c
+gl1_sp2.c
+gl1_surf.c
+gl1_warp.c
+hunk.c
+md4.c
+pcx.c
+pvs.c
+qgl.c
+shared.c
+Generating Code...
+Compiling...
+stb.c
+wal.c
+Generating Code...
+Linking...
+   Creating library ..\..\temp\ref_gl1\!debug/ref_gl1.lib and object ..\..\temp\ref_gl1\!debug/ref_gl1.exp
+<h3>Output Window</h3>
+Performing Custom Build Step on \q2src\temp\ref_gl1\!debug\ref_gl1.dll
+Скопировано файлов:         1.
+
+
+
+<h3>Results</h3>
+ref_gl1.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

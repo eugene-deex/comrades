@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{43bb6bfa-1208-4ce4-84aa-7b9b4e9570ae}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;fi;fd</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{f6388c1a-129b-4592-8f30-ad20b177b2f0}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="gl1\header\local.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="gl1\header\model.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="gl1\header\qgl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="gl1\gl1_draw.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gl1\gl1_image.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gl1\gl1_light.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gl1\gl1_lightmap.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gl1\gl1_main.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gl1\gl1_md2.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gl1\gl1_mesh.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gl1\gl1_misc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gl1\gl1_model.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gl1\gl1_scrap.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gl1\gl1_sdl.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gl1\gl1_sp2.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gl1\gl1_surf.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gl1\gl1_warp.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\backends\windows\shared\hunk.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\md4.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="files\pcx.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="files\pvs.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gl1\qgl.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\shared\shared.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="files\stb.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="files\wal.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

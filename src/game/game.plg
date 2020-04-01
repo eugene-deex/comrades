@@ -1,0 +1,191 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: game - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\BITTER~1\LOCALS~1\Temp\RSP187.tmp" with contents
+[
+/nologo /MD /W3 /O2 /I "./" /I "ents" /I "game" /I "global" /I "monsters" /I "../common" /I "../pm_shared" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /Fo"..\temp\game\!release/" /Fd"..\temp\game\!release/" /FD /c 
+"C:\q2src\game\monster\berserker.c"
+"C:\q2src\game\monster\boss2.c"
+"C:\q2src\game\monster\boss3.c"
+"C:\q2src\game\monster\boss31.c"
+"C:\q2src\game\monster\boss32.c"
+"C:\q2src\game\monster\brain.c"
+"C:\q2src\game\monster\chick.c"
+"C:\q2src\game\player\client.c"
+"C:\q2src\common\shared\flash.c"
+"C:\q2src\game\monster\flipper.c"
+"C:\q2src\game\monster\float.c"
+"C:\q2src\game\monster\flyer.c"
+"C:\q2src\game\g_ai.c"
+"C:\q2src\game\g_chase.c"
+"C:\q2src\game\g_cmds.c"
+"C:\q2src\game\g_combat.c"
+"C:\q2src\game\g_func.c"
+"C:\q2src\game\g_items.c"
+"C:\q2src\game\g_main.c"
+"C:\q2src\game\g_misc.c"
+"C:\q2src\game\g_monster.c"
+"C:\q2src\game\g_parent.c"
+"C:\q2src\game\g_phys.c"
+"C:\q2src\game\g_spawn.c"
+"C:\q2src\game\g_svcmds.c"
+"C:\q2src\game\g_target.c"
+"C:\q2src\game\g_trigger.c"
+"C:\q2src\game\g_turret.c"
+"C:\q2src\game\g_utils.c"
+"C:\q2src\game\g_weapon.c"
+"C:\q2src\game\monster\gladiator.c"
+"C:\q2src\game\monster\gunner.c"
+"C:\q2src\game\monster\hover.c"
+"C:\q2src\game\player\hud.c"
+"C:\q2src\game\monster\infantry.c"
+"C:\q2src\game\monster\insane.c"
+"C:\q2src\game\monster\medic.c"
+"C:\q2src\game\monster\move.c"
+"C:\q2src\game\monster\mutant.c"
+"C:\q2src\game\monster\parasite.c"
+"C:\q2src\common\shared\rand.c"
+"C:\q2src\game\savegame\savegame.c"
+"C:\q2src\common\shared\shared.c"
+"C:\q2src\game\monster\soldier.c"
+"C:\q2src\game\monster\supertank.c"
+"C:\q2src\game\monster\tank.c"
+"C:\q2src\game\player\trail.c"
+"C:\q2src\game\player\view.c"
+"C:\q2src\game\player\weapon.c"
+]
+Creating command line "cl.exe @C:\DOCUME~1\BITTER~1\LOCALS~1\Temp\RSP187.tmp" 
+Creating temporary file "C:\DOCUME~1\BITTER~1\LOCALS~1\Temp\RSP188.tmp" with contents
+[
+msvcrt.lib /nologo /subsystem:windows /dll /pdb:none /machine:I386 /nodefaultlib:"libc.lib" /def:".\game.def" /out:"..\temp\game\!release/game.dll" /implib:"..\temp\game\!release/game.lib" 
+"\q2src\temp\game\!release\berserker.obj"
+"\q2src\temp\game\!release\boss2.obj"
+"\q2src\temp\game\!release\boss3.obj"
+"\q2src\temp\game\!release\boss31.obj"
+"\q2src\temp\game\!release\boss32.obj"
+"\q2src\temp\game\!release\brain.obj"
+"\q2src\temp\game\!release\chick.obj"
+"\q2src\temp\game\!release\client.obj"
+"\q2src\temp\game\!release\flash.obj"
+"\q2src\temp\game\!release\flipper.obj"
+"\q2src\temp\game\!release\float.obj"
+"\q2src\temp\game\!release\flyer.obj"
+"\q2src\temp\game\!release\g_ai.obj"
+"\q2src\temp\game\!release\g_chase.obj"
+"\q2src\temp\game\!release\g_cmds.obj"
+"\q2src\temp\game\!release\g_combat.obj"
+"\q2src\temp\game\!release\g_func.obj"
+"\q2src\temp\game\!release\g_items.obj"
+"\q2src\temp\game\!release\g_main.obj"
+"\q2src\temp\game\!release\g_misc.obj"
+"\q2src\temp\game\!release\g_monster.obj"
+"\q2src\temp\game\!release\g_parent.obj"
+"\q2src\temp\game\!release\g_phys.obj"
+"\q2src\temp\game\!release\g_spawn.obj"
+"\q2src\temp\game\!release\g_svcmds.obj"
+"\q2src\temp\game\!release\g_target.obj"
+"\q2src\temp\game\!release\g_trigger.obj"
+"\q2src\temp\game\!release\g_turret.obj"
+"\q2src\temp\game\!release\g_utils.obj"
+"\q2src\temp\game\!release\g_weapon.obj"
+"\q2src\temp\game\!release\gladiator.obj"
+"\q2src\temp\game\!release\gunner.obj"
+"\q2src\temp\game\!release\hover.obj"
+"\q2src\temp\game\!release\hud.obj"
+"\q2src\temp\game\!release\infantry.obj"
+"\q2src\temp\game\!release\insane.obj"
+"\q2src\temp\game\!release\medic.obj"
+"\q2src\temp\game\!release\move.obj"
+"\q2src\temp\game\!release\mutant.obj"
+"\q2src\temp\game\!release\parasite.obj"
+"\q2src\temp\game\!release\rand.obj"
+"\q2src\temp\game\!release\savegame.obj"
+"\q2src\temp\game\!release\shared.obj"
+"\q2src\temp\game\!release\soldier.obj"
+"\q2src\temp\game\!release\supertank.obj"
+"\q2src\temp\game\!release\tank.obj"
+"\q2src\temp\game\!release\trail.obj"
+"\q2src\temp\game\!release\view.obj"
+"\q2src\temp\game\!release\weapon.obj"
+]
+Creating command line "link.exe @C:\DOCUME~1\BITTER~1\LOCALS~1\Temp\RSP188.tmp"
+Creating temporary file "C:\DOCUME~1\BITTER~1\LOCALS~1\Temp\RSP189.bat" with contents
+[
+@echo off
+copy \q2src\temp\game\!release\game.dll "C:\Quake2\baseq2\game.dll"
+]
+Creating command line "C:\DOCUME~1\BITTER~1\LOCALS~1\Temp\RSP189.bat"
+Compiling...
+berserker.c
+boss2.c
+boss3.c
+boss31.c
+boss32.c
+brain.c
+chick.c
+client.c
+C:\q2src\game\player\client.c(981) : warning C4101: 'item' : unreferenced local variable
+flash.c
+flipper.c
+float.c
+flyer.c
+g_ai.c
+g_chase.c
+g_cmds.c
+g_combat.c
+g_func.c
+g_items.c
+g_main.c
+g_misc.c
+Generating Code...
+Compiling...
+g_monster.c
+g_parent.c
+g_phys.c
+g_spawn.c
+g_svcmds.c
+g_target.c
+g_trigger.c
+g_turret.c
+g_utils.c
+g_weapon.c
+gladiator.c
+gunner.c
+hover.c
+hud.c
+infantry.c
+insane.c
+medic.c
+move.c
+mutant.c
+parasite.c
+Generating Code...
+Compiling...
+rand.c
+savegame.c
+shared.c
+soldier.c
+supertank.c
+tank.c
+trail.c
+view.c
+weapon.c
+Generating Code...
+Linking...
+   Creating library ..\temp\game\!release/game.lib and object ..\temp\game\!release/game.exp
+<h3>Output Window</h3>
+Performing Custom Build Step on \q2src\temp\game\!release\game.dll
+Скопировано файлов:         1.
+
+
+
+<h3>Results</h3>
+game.dll - 0 error(s), 1 warning(s)
+</pre>
+</body>
+</html>

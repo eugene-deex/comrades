@@ -1,0 +1,113 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: ref_soft - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\BITTER~1\LOCALS~1\Temp\RSP179.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /Gi /GX /ZI /Od /I "./" /D "YQ2OSTYPE Windows" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /FAs /Fa"..\..\temp\ref_soft\!debug/" /FR"..\..\temp\ref_soft\!debug/" /Fo"..\..\temp\ref_soft\!debug/" /Fd"..\..\temp\ref_soft\!debug/" /FD /c 
+"C:\q2src\backends\windows\shared\hunk.c"
+"C:\q2src\common\md4.c"
+"C:\q2src\client\refresh\files\pcx.c"
+"C:\q2src\client\refresh\files\pvs.c"
+"C:\q2src\common\shared\shared.c"
+"C:\q2src\client\refresh\files\stb.c"
+"C:\q2src\client\refresh\soft\sw_aclip.c"
+"C:\q2src\client\refresh\soft\sw_alias.c"
+"C:\q2src\client\refresh\soft\sw_bsp.c"
+"C:\q2src\client\refresh\soft\sw_draw.c"
+"C:\q2src\client\refresh\soft\sw_edge.c"
+"C:\q2src\client\refresh\soft\sw_image.c"
+"C:\q2src\client\refresh\soft\sw_light.c"
+"C:\q2src\client\refresh\soft\sw_main.c"
+"C:\q2src\client\refresh\soft\sw_misc.c"
+"C:\q2src\client\refresh\soft\sw_model.c"
+"C:\q2src\client\refresh\soft\sw_part.c"
+"C:\q2src\client\refresh\soft\sw_poly.c"
+"C:\q2src\client\refresh\soft\sw_polyset.c"
+"C:\q2src\client\refresh\soft\sw_rast.c"
+"C:\q2src\client\refresh\soft\sw_scan.c"
+"C:\q2src\client\refresh\soft\sw_sprite.c"
+"C:\q2src\client\refresh\soft\sw_surf.c"
+"C:\q2src\client\refresh\files\wal.c"
+]
+Creating command line "cl.exe @C:\DOCUME~1\BITTER~1\LOCALS~1\Temp\RSP179.tmp" 
+Creating temporary file "C:\DOCUME~1\BITTER~1\LOCALS~1\Temp\RSP17A.tmp" with contents
+[
+user32.lib gdi32.lib ./SDL2.lib /nologo /subsystem:windows /dll /incremental:yes /pdb:"..\..\temp\ref_soft\!debug/ref_soft.pdb" /debug /machine:I386 /out:"..\..\temp\ref_soft\!debug/ref_soft.dll" /implib:"..\..\temp\ref_soft\!debug/ref_soft.lib" /pdbtype:sept 
+"\q2src\temp\ref_soft\!debug\hunk.obj"
+"\q2src\temp\ref_soft\!debug\md4.obj"
+"\q2src\temp\ref_soft\!debug\pcx.obj"
+"\q2src\temp\ref_soft\!debug\pvs.obj"
+"\q2src\temp\ref_soft\!debug\shared.obj"
+"\q2src\temp\ref_soft\!debug\stb.obj"
+"\q2src\temp\ref_soft\!debug\sw_aclip.obj"
+"\q2src\temp\ref_soft\!debug\sw_alias.obj"
+"\q2src\temp\ref_soft\!debug\sw_bsp.obj"
+"\q2src\temp\ref_soft\!debug\sw_draw.obj"
+"\q2src\temp\ref_soft\!debug\sw_edge.obj"
+"\q2src\temp\ref_soft\!debug\sw_image.obj"
+"\q2src\temp\ref_soft\!debug\sw_light.obj"
+"\q2src\temp\ref_soft\!debug\sw_main.obj"
+"\q2src\temp\ref_soft\!debug\sw_misc.obj"
+"\q2src\temp\ref_soft\!debug\sw_model.obj"
+"\q2src\temp\ref_soft\!debug\sw_part.obj"
+"\q2src\temp\ref_soft\!debug\sw_poly.obj"
+"\q2src\temp\ref_soft\!debug\sw_polyset.obj"
+"\q2src\temp\ref_soft\!debug\sw_rast.obj"
+"\q2src\temp\ref_soft\!debug\sw_scan.obj"
+"\q2src\temp\ref_soft\!debug\sw_sprite.obj"
+"\q2src\temp\ref_soft\!debug\sw_surf.obj"
+"\q2src\temp\ref_soft\!debug\wal.obj"
+]
+Creating command line "link.exe @C:\DOCUME~1\BITTER~1\LOCALS~1\Temp\RSP17A.tmp"
+Creating temporary file "C:\DOCUME~1\BITTER~1\LOCALS~1\Temp\RSP17B.bat" with contents
+[
+@echo off
+copy \q2src\temp\ref_soft\!debug\ref_soft.dll "C:\Quake2\ref_soft.dll"
+]
+Creating command line "C:\DOCUME~1\BITTER~1\LOCALS~1\Temp\RSP17B.bat"
+Compiling...
+hunk.c
+md4.c
+pcx.c
+pvs.c
+shared.c
+stb.c
+sw_aclip.c
+sw_alias.c
+sw_bsp.c
+sw_draw.c
+sw_edge.c
+sw_image.c
+sw_light.c
+sw_main.c
+sw_misc.c
+sw_model.c
+sw_part.c
+sw_poly.c
+sw_polyset.c
+sw_rast.c
+Generating Code...
+Compiling...
+sw_scan.c
+sw_sprite.c
+sw_surf.c
+wal.c
+Generating Code...
+Linking...
+   Creating library ..\..\temp\ref_soft\!debug/ref_soft.lib and object ..\..\temp\ref_soft\!debug/ref_soft.exp
+<h3>Output Window</h3>
+Performing Custom Build Step on \q2src\temp\ref_soft\!debug\ref_soft.dll
+Скопировано файлов:         1.
+
+
+
+<h3>Results</h3>
+ref_soft.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
