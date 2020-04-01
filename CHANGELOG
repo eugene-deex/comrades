@@ -1,0 +1,16 @@
+
+
+
+# 01.04.2020
+- First crossplatform release. Built on WinXP SP3 (VS 6.0 with SP 5.0 and ProcessorPack) and Linux Debian 9 
+
+Until 01.04.2020:
+
+- target_spawner 'Prevent spawn inside' flag added
+- monsters wont attack each other anymore
+- player starts without blaster, weapon_blaster entity added
+- 'pathtarget' field added to doors, it fires when door is fully closed
+- misc_model entity added. It places static models on a level
+- now game looks for resources in local files first; PAK has lower priority
+- parents system added. Entites got 'parent' fields and can be attached to each other
+
