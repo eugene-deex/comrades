@@ -194,8 +194,9 @@ void parent_init( edict_t *ent )
 		VectorCopy( ent->s.angles, child->parent_attach_angles );
 		if( child->org_movetype < 0 )
 			child->org_movetype = child->movetype;
-		if( child->movetype != MOVETYPE_NONE )
+		if( child->solid != SOLID_NOT )
 			child->movetype = MOVETYPE_PUSH;
+		else child->movetype = MOVETYPE_NOCLIP;
 		VectorCopy( child->mins, child->org_mins );
 		VectorCopy( child->maxs, child->org_maxs );
 		VectorSubtract( child->s.origin, ent->s.origin, child->parent_offset );

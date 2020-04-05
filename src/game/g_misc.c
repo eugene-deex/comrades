@@ -1388,8 +1388,11 @@ SP_misc_model(edict_t *self)
 		self->nextthink = level.time + 2 * FRAMETIME;
 	}
 
-	if (!VectorCompare(self->mins, vec3_origin) || !VectorCompare(self->maxs, vec3_origin))
-		self->solid = SOLID_BBOX;
+	if (self->spawnflags & 2)
+	{
+		if (!VectorCompare(self->mins, vec3_origin) || !VectorCompare(self->maxs, vec3_origin))
+			self->solid = SOLID_BBOX;
+	}
 
 	self->s.modelindex = gi.modelindex(self->model);
 	gi.linkentity(self);
