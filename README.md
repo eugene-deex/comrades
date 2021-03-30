@@ -1,8 +1,9 @@
 # Quake II: Comrades (DEMO)
-Singleplayer modification.
-Based on Yamagi 7.43
+Singleplayer modification, based on Yamagi 7.43
 
-Year: 2020
+[Speedrun on Youtube](https://www.youtube.com/watch?v=WYMpFjncamg)
+
+[Full Walkthrough on Youtube](https://www.youtube.com/watch?v=dfxtrlPgthE)
 
 Release date: March 30, 2021
 
